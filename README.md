@@ -2,7 +2,7 @@
 
 Android Developer: Your first App
 
-![https://cloud.githubusercontent.com/assets/19314291/16318505/87fe35d4-395d-11e6-8a2c-1d9ba2fd6117.png]
+![Submission](https://cloud.githubusercontent.com/assets/19314291/16318505/87fe35d4-395d-11e6-8a2c-1d9ba2fd6117.png)
 
 Project Overview
 
@@ -52,4 +52,4 @@ to clean up your project. This removes some temporary files and greatly decrease
 
 Check out the project rubric below:
 
-![https://cloud.githubusercontent.com/assets/19314291/16318911/0a8f561c-395f-11e6-9512-f43b3db2d471.png]
+![Rubric](https://cloud.githubusercontent.com/assets/19314291/16318911/0a8f561c-395f-11e6-9512-f43b3db2d471.png)
