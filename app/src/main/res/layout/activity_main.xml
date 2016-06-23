@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#E0E0E0"
+tools:context="com.example.android.small_business_app.MainActivity">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#673AB7"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/menu_icon"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:text="Consulting Detectives"
+        android:textStyle="italic"
+        android:textColor="#F3E5F5"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/search_icon_bl"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/more_vert_bl"/>
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/location_pic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:layout_centerHorizontal="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/location_pic"/>
+<TextView
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:layout_marginTop="125dp"
+    android:layout_marginLeft="72dp"
+    android:textStyle="italic"
+    android:textSize="45sp"
+    android:textColor="#FF9800"
+    android:text="Sherlock Holmes · Dr. Watson"
+    android:fontFamily="sans-serif-condensed"/>
+<ImageView
+    android:id="@+id/google_map"
+    android:layout_below="@id/location_pic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/baker_street_google_maps"/>
+<TextView
+    android:id="@+id/description"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingTop="4dp"
+    android:paddingLeft="72dp"
+    android:paddingRight="16dp"
+    android:background="#673AB7"
+    android:text="“It is our business to know what other people do not know.”"
+    android:textColor="#F3E5F5"
+    android:textStyle="italic"
+    android:textAppearance="?android:textAppearanceSmall"
+    android:fontFamily="sans-serif-light"/>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/business_info"
+    android:layout_below="@id/location_pic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="72dp"
+    android:layout_marginTop="24dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic|bold"
+        android:text="INFORMATION:"
+        android:textSize="20sp"
+        android:textColor="#673AB7"/>
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="221b Baker Street, London"
+        android:textColor="#673AB7" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-light"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="italic"
+        android:text="020 7946 0xxx"
+        android:textColor="#673AB7"/>
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="www.sherlock_watson.org"
+        android:textColor="#673AB7"/>
+    <TextView
+        android:id="@+id/hours_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="Since 1887"
+        android:textColor="#673AB7"/>
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttons"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/find_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WHO WE ARE"/>
+    <Button
+        android:id="@+id/need_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROBES"/>
+    <Button
+        android:id="@+id/cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLOG"/>
+    <Button
+        android:id="@+id/blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIND US"/>
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infos"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/google_map"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_alignParentRight="true"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/border_star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="4dp"
+        android:layout_above="@id/description"
+        android:src="@drawable/star_icon_white" />
+    <ImageView
+        android:id="@+id/border_star2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/star_icon_white" />
+    <ImageView
+        android:id="@+id/border_star3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/star_icon_white" />
+    <ImageView
+        android:id="@+id/border_star4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/star_icon_white" />
+    <ImageView
+        android:id="@+id/border_star5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/star_half_icon_white" />
+    <ImageView
+        android:id="@+id/sherlock_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/holmes_round_pic" />
+    <ImageView
+        android:id="@+id/watson_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/sherlock_pic"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/watson_round_pic" />
+</LinearLayout>
+
+</RelativeLayout>
